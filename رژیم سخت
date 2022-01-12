@@ -1,0 +1,7 @@
+inp = input()
+r, y, g = inp.count("R"), inp.count("Y"), inp.count("G")
+
+if r >= 3 or (r >= 2 and y >= 2) or g == 0:
+    print("nakhor lite")
+else:
+    print("rahat baash")
