@@ -1,0 +1,8 @@
+strings = [input() for i in range(5)]
+result = []
+
+for i, s in enumerate(strings, start=1):
+    if 'MOLANA' in s or 'HAFEZ' in s:
+        result.append(str(i))
+
+print(' '.join(result) if result else "NOT FOUND!")
