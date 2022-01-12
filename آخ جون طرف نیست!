@@ -1,0 +1,7 @@
+days = ["shanbe", "1shanbe", "2shanbe", "3shanbe", "4shanbe", "5shanbe", "jome"]
+
+for i in range(3):
+    input()
+    [days.remove(d) for d in input().split() if d in days]
+
+print(len(days)
