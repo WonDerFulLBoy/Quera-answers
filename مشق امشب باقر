@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    float x, y, z;
+    scanf("%f %f %f", &x, &y, &z);
+    if (x+y+z == 180 && x != 0 && y != 0 && z != 0)
+        printf("Yes\n");
+    else
+        printf("No\n");
+    return 0;
+}
