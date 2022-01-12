@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+
+
+int main() {
+	int n;
+	long int fact=1;
+	int i=2;
+    scanf("%d",&n);
+    while (i<=n){
+    	fact*=i;
+    	i++;
+	}
+	printf("%lld",fact);
+	return 0;
+}
