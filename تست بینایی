@@ -1,0 +1,6 @@
+n = int(input())
+s1 = input()
+s2 = input()
+
+print(n - sum(map(lambda x: x[0] == x[1], zip(s1, s2))))
+
