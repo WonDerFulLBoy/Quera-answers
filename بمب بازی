@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+int main(){
+ int n,m,k;	
+scanf("%d %d %d",&n,&m,&k);
+	int border[n][m]={{0}};
+	int p=0;
+ for(int i=1;i<=k;i++){
+ 	int x,y;
+ 	scanf("%d %d",&x,&y);
+ x--;
+ y--;
+  	border[x][y]=100; 
+ }
+ 
+  	for(int i=0;i<n;i++){
+	for(int j=0;j<m;j++){
+		while(border[i][j]==100){
+			j++;
+				}
+			int total=0;
+			if(i+1<n && j+1<m && border[i+1][j+1]==100)total++;
+			if(i+1<n && border[i+1][j]==100)total++;
+			if(i+1<n && j-1>=0 && border[i+1][j-1]==100)total++;
+			if(j+1<m && border[i][j+1]==100)total++;
+			if(j-1>=0 && border[i][j-1]==100)total++;
+			if(i-1>=0 && j+1<m && border[i-1][j+1]==100)total++;
+			if(i-1>=0 && border[i-1][j]==100)total++;
+			if(i-1>=0 && j-1>=0 && border[i-1][j-1]==100)total++;
+			border[i][j]=total;
+		}
+	}
+for(int i=0;i<=(n-1);i++){
+for(int j=0;j<=(m-1);j++){
+	if(border[i][j]==100){
+		printf("*");
+		printf(" ");
+	}
+	else{
+		printf("%d",border[i][j]);
+		printf(" ");
+	}	
+}	
+printf("\n");
+}
+ 	return 0;
+}
