@@ -1,0 +1,8 @@
+a, b, n = map(int, input().split())
+
+if n % 2 == 0:
+    answer = n/2 * (a+b)
+else:
+    answer = (n-1)/2 * (a+b) + a
+
+print(int(answer))
