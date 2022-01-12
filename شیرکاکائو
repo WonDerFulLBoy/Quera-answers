@@ -1,0 +1,13 @@
+n = int(input()) # n : 4
+b = list(map(int, input() .split())) # b : {2, -3, 2, 2}
+
+sum = 0
+sub = 0
+
+for i in range(len(b)): # len(b) : 4 , i: 2, -3, 2, 2
+    sum = sum - b[i] # 3 - 2
+    if sum < 0:
+        sub = sub + abs(sum)
+        sum = 0
+        
+print(sub)
