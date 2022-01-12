@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+	int va, sh, ro, fi, as, sa, ja, i;
+	scanf("%d %d %d %d %d %d", &sh, &va, &ro, &fi , &as ,&sa);
+	printf("%d ", 1-sh);
+	printf("%d ", 1-va);
+	printf("%d ", 2-ro);
+	printf("%d ", 2-fi);
+	printf("%d ", 2-as);
+	printf("%d ", 8-sa);
+	return 0;
+}
