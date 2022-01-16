@@ -1,0 +1,12 @@
+k = int(input())
+password = input()
+
+wheels = [input() for i in range(k)]
+
+result = 0
+
+for i in range(k):
+    idx = wheels[i].index(password[i])
+    result += idx if idx < 5 else 9-idx
+
+print(result)
